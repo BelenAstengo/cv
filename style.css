@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -62,12 +61,8 @@ header{
 	display: flex;	
 	margin-left: 20px;
 	padding: left, 20px;
-
-
-
 }
 
 #sobremi{
 	height: 100%;
-
 }
