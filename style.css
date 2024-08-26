@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+	background:-webkit-linear-gradient(top, #04FFF0, #8D9998);
+	font-family: Noto Sans;
+}
+
+h1{
+	color: azure;
+	font-family: Antonio;
+	font-weight: 700;
+	font-size: 96px;
+}
+
+h2{
+	color: azure;
+	font-family: Noto Sans;
+	font-weight: 300;
+	font-size: 32px;
+	font-style: italic;
+}
+
+h3{
+	color: azure;
+	font-family: Antonio;
+	font-weight: 300;
+	font-size: 152px;
+}
+
+h6{
+	color: azure;
+	font-family: Noto Sans;
+	font-weight: 300;
+	font-size: 32px;
+	font-style: italic;
+}
+
+p{
+	color: azure;
+	font-family: Noto Sans;
+	font-size: 16px;
+}
+
+
+header{
+		background: rgba(242, 234, 234, 0.897);
+		height: 40px;
+		width: 80%;		
+}
+
+#botonera{
+	color: azure;
+	font-family: Antonio;
+	font-size: 20px;
+	list-style: none;
+	display: flex;	
+	margin-left: 20px;
+	padding: left, 20px;
+
+
+
+}
+
+#sobremi{
+	height: 100%;
+
+}
