@@ -4,7 +4,8 @@
 
 <head>
         <meta charset="utf-8">
-        <title>Tp1 cv</title>
+        <title>Belén Astengo - Curriculum Vitae</title>
+        <link rel="icon" href="img/favicon.jpg" alt="faviconbelenastengo">
         <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,64 +13,237 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <header>
         <nav>
-            <ul id="botonera">
-                <li>Sobre mí</li>
-                <li>Proyectos destacados</li>
-                <li>Formación </li>
-                <li>Contacto</li>
+            <div class="iconobotonera">
+                <a href="index.html" target="_self"><img src="img/icon.gif"  alt="indesign"/></a>
+            </div>
+            <ul class="botonera">
+                <li><a href="#contenedor" target="_self">Sobre mí</a></li>
+                <li><a href="#formacion" target="_self">Formación</a></li>
+                <li><a href="index.html#proyectos" target="_self">Proyectos destacados</a></li>
+                <li><a href="index.html#hobies" target="_self">Hobbies</a></li>
+                <li><a href="index.html#contacto" target="_self">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="sobremi">
-
-            <article> 
+    <main> 
+        <section class="contenedor" id="contenedor">
+            <article class="sobremi"> 
                 <h1>BELÉN ASTENGO</h1>
                 <h2>Sobre mí</h2> 
                 <p>¡Hola! soy Belén Astengo, estudiante de Diseño y Comunicación Visual en la UNLA, donde actualmente curso el 4to año.
                 Me encanta sumergirme en el mundo del diseño, desde crear piezas gráficas hasta explorar nuevas tendencias visuales.
                 Además de mi pasión por el diseño. ¡Estoy emocionada por seguir aprendiendo y creciendo en este camino creativo!</p>
-                <img src="img/astengobelen-cv.jpg" width="50%" height="50%" alt="Astengo Belen cv"/>
+                <ul>
+                    <li>22 años</li>
+                    <li>Estudiante de DyCV</li>
+                    <li>Bilingüe</li>
+                    <li>Ilustradora</li>
+                </ul>
             </article>
         </section>
 
-        <section>
-
+        <section class="formacion" id="formacion">
             <article> 
-                <h3>PROYECTOS DESTACADOS</h3>
-              
+                <h3>Formación</h3>
+                <ul class="estudios">
+                    <li>
+                        <p id="subtitulo">Estudiante de diseño y comunicacion visual</p>
+                        <p>Universidad Nacional de Lanús </p>
+                    </li>
+                    <li>
+                        <p id="subtitulo">First Certificate of English</p>
+                        <p>AACI - Asociación Argentina de cultura inglesa</p>
+                    </li>
+                    <li>
+                        <p id="subtitulo">Introducción a la programación</p>
+                        <p>Oracle</p>
+                    </li>
+                    <li>
+                        <p id="subtitulo">Experiencias laborales</p>
+                        <p>Realización de identidad visual para Mutancia</p>
+                        <p>Asistente de ventas de CAFIRA</p>
+                    </li>
+                    <li>
+                        <p id="subtitulo">Herramientas</p>
+                        <a href="https://www.adobe.com/ar/products/indesign.html" target="_self">
+                            <img src="img/logo1.png" width="50px" height="50px" alt="indesign" class="logo"/>
+                        </a>
+                        <a href="https://www.adobe.com/ar/products/illustrator.html" target="_self">
+                            <img src="img/logo2.png" width="50px" height="50px" alt="Illustrator" class="logo"/>
+                        </a>
+                        <a href="https://www.adobe.com/ar/products/photoshop.html" target="_self">
+                            <img src="img/logo3.png" width="50px" height="50px" alt="photoshop" class="logo"/>
+                        </a>
+                        <a href="https://www.sketchbook.com/" target="_self">
+                            <img src="img/logo4.png" width="50px" height="50px" alt="sketchbook" class="logo"/>
+                        </a>
+                        <a href="https://code.visualstudio.com/" target="_self">
+                            <img src="img/logo5.png" width="50px" height="50px" alt="visualstudio" class="logo"/>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="materiascompletadas">
+                <p>Materias completadas de la carrera</p>
+                <ol class="listamaterias">
+                    <li>Taller de diseño I</li>
+                    <li>Medios expresivos I</li>
+                    <li>Espacio tipográfico I</li>
+                    <li>Teoría del diseño I</li>
+                    <li>Geometría descriptiva aplicada </li>
+                    <li>Taller de lectura y escritura profesional</li>
+                    <li>Tecnología I</li>
+                    <li>Tecnología II</li>
+                    <li>Computación I</li>
+                    <li>Computación II</li>
+                    <li> Medios expresivos II</li>
+                    <li>Taller de diseño II </li>
+                    <li>Espacio tipográfico II</li> 
+                    <li>Historia de la comunicación visual</li> 
+                    <li>Metodología de la investigación</li>
+                    <li>Taller de diseño III</li>
+                    <li>Fotografía</li>
+                    <li>Medios expresivos III</li>
+                    <li>Espacio tipográfico III</li>
+                    <li>Historia social del diseño</li>
+                    <li>Taller de diseño IV</li>
+                    <li>Taller expreción visual</li>
+                </ol>        
             </article>
         </section>
 
-        <aside>
-            <ul>   
-                <li>Hobbies</li>
-                <li>Proceso creativo</li>
-                <li>Recursos</li>
-                <li>Musica</li>
-            </ul>
+        <section class="proyectos" id="proyectos">
+            <h4>× PROYECTOS DESTACADOS ×</h4>
+            <article class="cards"> 
+                    <div class="box-autoedicion">
+                        <div class="contenido">
+                            <p>Colección de libros - TD4</p>
+                        </div>
+                            <img src="img/proyecto1.png" width="300px" height="170px" alt="coleccion"/>
+                    </div>
+                    <div class="box-infografia">
+                        <div class="contenido">
+                            <p>Más allá de la gravedad - infografía</p>
+                        </div>
+                            <img src="img/proyecto2.png" width="300px" height="170px" alt="infografia"/>
+                    </div>
+                    <div class="box-autoedicion">
+                        <div class="contenido">
+                            <p>Proyecto de autoedición - TD4</p>
+                        </div>
+                            <img src="img/proyecto3.png" width="300px" height="170px" alt="autoedicion"/>
+                    </div>
+                    <div class="box-landscape">
+                        <div class="contenido">
+                            <p>Landscape</p>
+                        </div>
+                            <img src="img/proyecto4.png" width="300px" height="170px" alt="landscape"/>
+                    </div>
+                    <div class="box-notacion">
+                        <div class="contenido">
+                            <p>Notación musical</p>
+                        </div>
+                            <img src="img/proyecto5.png" width="300px" height="170px" alt="notacionmusical"/>
+                    </div>
+                    <div class="box-lettering">
+                        <div class="contenido">
+                            <p>Vibrato - lettering</p>
+                        </div>
+                            <img src="img/proyecto6.png" width="300px" height="170px" alt="lettering"/>
+                    </div>
+                    <div class="box-juegodecartas">
+                        <div class="contenido">
+                            <p>Negocio entre manos - cartas</p>
+                        </div>
+                            <img src="img/proyecto7.png" width="300px" height="170px" alt="cartas"/>
+                    </div>
+                    <div class="box-araki">
+                        <div class="contenido">
+                            <p>Hirohiko Araki - biografía</p>
+                        </div>
+                            <img src="img/proyecto8.png" width="300px" height="170px"  alt="Hirohiko Araki"/>
+                    </div>
+            </article>
+        </section>
 
-        </aside>
-
+        <section class="hobies" id="hobies">
+            <h5>HOBIES</h5> 
+            <article class="pasatiempos"> 
+                <div class="caja-ilustracion">
+                    <div class="contenido2">
+                        <p>Ilustración</p>
+                    </div>
+                        <img src="img/hobies1.png" width="500px" height="450px"  alt="dibujo"/>
+                        <p>Siempre me gusto la Ilustración y espero seguirme perfeccionando.</p>
+                </div> 
+                <div class="caja-violin">
+                    <div class="contenido2">
+                        <p>Violín</p>
+                    </div>
+                        <img src="img/hobies2.png" width="500px" height="450px"  alt="violin"/>
+                        <p>Amo la música, en un futuro me gustaría aprender otros instrumentos.</p>
+                    </div> 
+                </div> 
+                <div class="caja-game">
+                    <div class="contenido2">
+                        <p>videojuegos</p>
+                    </div>
+                        <img src="img/hobies3.gif"  alt="videojuego"/>
+                        <p>Para despejar la cabeza.</p>
+                    <div class="contenido2">
+                        <p>Baile</p>
+                    </div>
+                        <img src="img/hobies4.gif" height="175px" width="220px" alt="baile"/>
+                        <p><3</p>
+                    </div>
+                </div> 
+            </article>
+        </section>
     </main>
 
-
-    <footer>
-        <h6>Contacto</h6>
-        <ul>
-            <li>Telefono: 156738393</li>
-            <li>Instagram: @</li>
-            <li>Email: @</li>
-        </ul>
+    <footer class="contacto" id="contacto">
+        <div>
+            <h6>× CONTACTO ×</h6>
+        </div>
+        <div class="datos">
+            <div class="variable1">
+                <p>Teléfono</p>
+            </div>
+            <div class="variable2">
+                <p>156738393</p>
+            </div>
+        </div>
+        <div class="datos">
+            <div class="variable1">
+                <p>Email</p>
+            </div>
+            <div class="variable2">
+                <p>malendance@gmail.com</p>
+            </div>
+        </div>
+        <div class="datos">
+            <div class="variable1">
+                <p>Redes sociales</p>
+            </div>
+            <div class="variable2">
+                <p>@belenasten</p>
+            </div>
+        </div>
+        <div class="datos">
+            <div class="variable1">
+                <p>Ubicación</p>
+            </div>
+            <div class="variable2">
+                <p>Buenos Aires, Argentina</p>
+            </div>
+        </div>
     </footer>
-
 </body>
-
-
 </html>

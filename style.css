@@ -4,65 +4,324 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body{
-	background:-webkit-linear-gradient(top, #04FFF0, #8D9998);
-	font-family: Noto Sans;
+* {	
+	margin: 0%;
+	padding: 0%;
 }
 
-h1{
+body {
+	font-family: Noto Sans;
+	background:-webkit-linear-gradient(top, #570091, #ac068e);
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
 	color: azure;
 	font-family: Antonio;
 	font-weight: 700;
-	font-size: 96px;
+	font-size: 100px;
 }
 
-h2{
+h2 {
 	color: azure;
 	font-family: Noto Sans;
 	font-weight: 300;
-	font-size: 32px;
+	font-size: 150%;
 	font-style: italic;
 }
 
-h3{
+h3 {
 	color: azure;
 	font-family: Antonio;
 	font-weight: 300;
-	font-size: 152px;
+	font-size: 40px;
 }
 
-h6{
+h4 {
+	color: azure;
+	font-family: Antonio;
+	font-weight: 100;
+	font-size: 100px; 
+	letter-spacing: 4px;
+	display: flex;
+	justify-content: space-around;
+}
+
+h5 {
+	color: azure;
+	font-family: Antonio;
+	font-weight: 300;
+	font-size: 64px;
+}
+
+h6 {
+	color: azure;
+	font-family: Antonio;
+	letter-spacing: 100%;
+	font-weight: 200;
+	font-size: 35px;
+}
+
+p {
 	color: azure;
 	font-family: Noto Sans;
-	font-weight: 300;
-	font-size: 32px;
-	font-style: italic;
+	font-size: 100%;
+	line-height: 25px;
+	letter-spacing: 0.2px;
 }
 
-p{
+ul {
+	list-style: none;
 	color: azure;
+	font-family: Noto Sans;
+	font-size: 100%;
+	line-height: 25px;
+}
+
+ol {
+	color: azure;
+	font-family: Noto Sans;
+	font-size: 100%;
+	line-height: 25px;
+	font-weight: 100;
+}
+
+nav {
+	display: flex;	
+	justify-content: space-between;
+}
+
+header {
+	position: fixed;
+	background: rgba(242, 234, 234, 0.2);
+	width: 90%;
+	border-radius: 10px;	
+	margin-top: 1%;
+}
+
+.iconobotonera {
+	padding-left: 2%;
+	padding-top: 0.8%;
+}
+
+.botonera {
+	list-style: none;
 	font-family: Noto Sans;
 	font-size: 16px;
-}
-
-
-header{
-		background: rgba(242, 234, 234, 0.897);
-		height: 40px;
-		width: 80%;		
-}
-
-#botonera{
-	color: azure;
-	font-family: Antonio;
-	font-size: 20px;
-	list-style: none;
+	padding: 1.5% 2%; 
+	width: 80%;
 	display: flex;	
-	margin-left: 20px;
-	padding: left, 20px;
+	justify-content: space-between;
 }
 
-#sobremi{
-	height: 100%;
+.botonera a {
+    color: azure;
+    text-decoration: none;
+}
+
+.botonera a:hover {
+	transition: 0.3s;
+    color: #0ee9c1;  
+}
+
+.contenedor {
+	margin-top: 7%;
+	height: 85vh;
+	display: flex;
+	background: url(img/astengobelen-cv.jpg);
+	border-radius: 10px;
+}
+
+.sobremi {
+	padding-left: 2%; 
+	padding-top: 5%;
+}
+
+.sobremi h2 {
+	padding-top: 30px;
+}
+
+.sobremi p {	
+	padding-top: 10px;
+	width: 35%;
+}
+
+.sobremi ul {
+	margin-top: 80px;
+	display: flex;
+	flex-flow: row wrap;
+	font-weight: 600;
+}
+
+.sobremi li {
+	background-color: #570091;
+	border-radius: 10px;
+	width: 15%;	
+	padding: 1% 1%;
+	margin-right: 10px;
+	margin-bottom: 1%;
+}
+
+.sobremi li:hover {
+	background-color: rgb(18, 188, 176);
+	transform: scale(1.05);
+	transition: 1s;
+}
+
+.formacion {
+	margin-top: 180px;
+	display: flex;
+	flex: row;
+	justify-content: space-between;
+}
+
+.estudios {
+	margin-top: 30px;
+	font-weight: 100;
+	width: 40vw;
+}
+
+.estudios img:hover {
+	transform: scale(1.4);
+    text-decoration: none;
+}
+
+#subtitulo{
+	font-weight: 800;
+}
+
+.estudios li {
+	background-color: rgba(4, 255, 240, 0.4);
+	border-radius: 10px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+ .logo {
+	padding-top: 15px;
+	padding-left: 2%;
+ }
+
+.materiascompletadas {	
+	margin-top: 80px;
+	margin-left: 10px;
+	width: 50%;
+	background-color: rgba(0, 24, 23, 0.263);
+	border-radius: 10px;
+	padding: 15px 30px;
+}
+
+.listamaterias{
+	padding-top: 15px;
+	column-count: 2;
+	list-style-position: inside;
+	line-height: 40px;
+	padding-left: 2%;
+}
+
+.materiascompletadas li:hover {
+	background-color: rgba(20, 218, 236, 0.501);
+	transform: scale(1.05);
+	transition: 1s;
+	border-radius: 10px;
+}
+
+.proyectos {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+ }
+
+ .cards img {
+	border-radius: 10px;
+ }
+
+ .cards img:hover {
+	transform: scale(1.3);
+	transition: 1s;
+}
+
+.contenido {
+	font-weight: 100;
+	font-style: italic;
+	letter-spacing: 0.7px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.hobies {
+	margin-top: 130px;
+	padding-right: 30px;
+
+ }
+
+.pasatiempos {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-right: 30px;
+	font-size: 14px;
+}
+
+.contenido2 {
+	font-weight: 800;
+	letter-spacing: 0.2px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.caja-ilustracion {
+	padding-right: 30px;
+}
+
+.caja-violin {
+	padding-right: 30px;
+}
+
+.caja-videojuegos {
+	padding-right: 30px;
+}
+
+ .hobies img {
+	border-radius: 10px;
+ }
+
+ .hobies img:hover {
+	transform: rotate(5deg);
+	transition: 1s;
+}
+
+footer {
+	background: #8106d3;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	padding: 8% 2%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer:hover {
+	background: #9b06ff;
+	transition: 1s;
+}
+
+.variable1{
+	font-weight: 600;
+	letter-spacing: 1%;
+	font-size: 14px;
+}
+
+.variable2 {
+	font-weight: 200;
+	font-size: 14px;
 }
