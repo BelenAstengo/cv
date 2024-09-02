@@ -31,6 +31,7 @@ h2 {
 	font-weight: 300;
 	font-size: 150%;
 	font-style: italic;
+	padding-top: 30px;
 }
 
 h3 {
@@ -46,8 +47,8 @@ h4 {
 	font-weight: 100;
 	font-size: 100px; 
 	letter-spacing: 4px;
-	display: flex;
-	justify-content: space-around;
+	text-align: center;
+	padding-bottom: 30px;
 }
 
 h5 {
@@ -89,6 +90,11 @@ ol {
 	font-weight: 100;
 }
 
+a {
+	text-decoration: none;
+	color: azure;
+}
+
 nav {
 	display: flex;	
 	justify-content: space-between;
@@ -96,7 +102,7 @@ nav {
 
 header {
 	position: fixed;
-	background: rgba(242, 234, 234, 0.2);
+	background: rgba(146, 34, 232);
 	width: 90%;
 	border-radius: 10px;	
 	margin-top: 1%;
@@ -119,7 +125,6 @@ header {
 
 .botonera a {
     color: azure;
-    text-decoration: none;
 }
 
 .botonera a:hover {
@@ -133,15 +138,12 @@ header {
 	display: flex;
 	background: url(img/astengobelen-cv.jpg);
 	border-radius: 10px;
+	margin-bottom: 5%;
 }
 
 .sobremi {
 	padding-left: 2%; 
 	padding-top: 5%;
-}
-
-.sobremi h2 {
-	padding-top: 30px;
 }
 
 .sobremi p {	
@@ -172,10 +174,9 @@ header {
 }
 
 .formacion {
-	margin-top: 180px;
+	padding-top: 7%;
 	display: flex;
-	flex: row;
-	justify-content: space-between;
+	flex-direction: row;
 }
 
 .estudios {
@@ -186,7 +187,6 @@ header {
 
 .estudios img:hover {
 	transform: scale(1.4);
-    text-decoration: none;
 }
 
 #subtitulo{
@@ -200,7 +200,7 @@ header {
 	margin-bottom: 10px;
 }
 
- .logo {
+.logo {
 	padding-top: 15px;
 	padding-left: 2%;
  }
@@ -230,21 +230,21 @@ header {
 }
 
 .proyectos {
-	margin-top: 80px;
+	padding-top: 6%;
 	margin-bottom: 100px;
 }
 
-.cards {
+.cards ul {	
 	display: flex;
-	justify-content: space-between;
 	flex-flow: row wrap;
+	gap: 40px;
  }
 
- .cards img {
+.cards img {
 	border-radius: 10px;
  }
 
- .cards img:hover {
+.cards img:hover {
 	transform: scale(1.3);
 	transition: 1s;
 }
@@ -253,21 +253,19 @@ header {
 	font-weight: 100;
 	font-style: italic;
 	letter-spacing: 0.7px;
-	padding-top: 30px;
 	padding-bottom: 10px;
 }
 
-.hobies {
-	margin-top: 130px;
+.hobbies {
+	padding-top: 6%;
 	padding-right: 30px;
 
  }
 
 .pasatiempos {
 	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	padding-right: 30px;
+	flex-flow: row wrap;
+	gap: 20px;
 	font-size: 14px;
 }
 
@@ -290,11 +288,11 @@ header {
 	padding-right: 30px;
 }
 
- .hobies img {
+.hobbies img {
 	border-radius: 10px;
  }
 
- .hobies img:hover {
+.hobbies img:hover {
 	transform: rotate(5deg);
 	transition: 1s;
 }
