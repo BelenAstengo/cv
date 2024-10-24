@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Belén Astengo - Curriculum Vitae</title>
+        <link rel="icon" href="img/favicon.png" alt="faviconbelenastengo">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+        <nav>
+            <div class="iconobotonera">
+                <a href="index.html" target="_self"><img src="img/icon.gif"  width="40px" height="40px" alt="indesign"/></a>
+            </div>
+            <ul class="botonera">
+                <li><a href="index.html" target="_self">Sobre mí</a></li>
+                <li><a href="index.html#seccion-formacion" target="_self">Formación</a></li>
+                <li><a href="index.html#seccion-hobbies" target="_self">Hobbies</a></li>
+                <li><a href="proyectos.html" target="_self">Proyectos destacados</a></li>
+                <li><a href="contacto.html" target="_self">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h6 id="formulario">Contactame</h6>
+        <form method="post" action="" target="_blank" enctype="text/plain">
+            <div>
+            <label for="name">*Nombre</label>
+            <input type="text" name="name" id="name" placeholder="María Pérez" maxlength="30" required>
+
+            <label for="Teléfono">*Teléfono</label>
+            <input type="tel" name="Teléfono" id="Teléfono" placeholder="(00)00000000" required>
+           
+            <label for="edad">Edad</label>
+            <input type="date" name="edad" id="edad">
+          
+            <label for="email">*Email</label>
+            <input type="email" name="email" id="email" placeholder="mariaperez@hotmail.com" required>
+
+            <label for="Ubicación">Ubicación</label>
+            <input type="text" name="Ubicación" id="Ubicación" placeholder="Localidad, provincia">
+            </div>
+
+            <div>
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="mensaje" maxlength="300"></textarea>
+            
+            <p class="subtitulo-intereses">Intereses</p>
+                <div class="intereses">
+                    <label class="checkbox">Ilustración<input type="checkbox" name="Ilustración" value="Ilustración" id="Ilustración"></label>
+                    <label class="checkbox">Diseño editorial<input type="checkbox" name="Diseño editorial" value="Diseño editorial" id="Diseño editorial"></label>
+                    <label class="checkbox">Branding<input type="checkbox" name="Branding" value="Branding" id="Branding"></label>
+                    <label class="checkbox">Otro<input type="checkbox" name="Otro" value="Otro" id="Otro"></label>
+                </div> 
+                <div class="botones-form">
+                <input type="reset" value="Borrar" class="boton">
+                <input type="submit" value="Enviar" class="boton" formenctype="text/plain">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="contacto" id="seccion-contacto">
+        <h6>× MIS DATOS ×</h6>
+        <div class="datos">
+            <p class="variable1">Teléfono</p>
+            <p class="variable2">156738393</p>
+        </div>
+        <div class="datos">
+            <p class="variable1">Email</p>
+            <p class="variable2">malendance@gmail.com</p>
+        </div>
+        <div class="datos">
+            <p class="variable1">Redes sociales</p>
+            <p class="variable2">@belenasten</p>
+        </div>
+        <div class="datos">
+            <p class="variable1">Ubicación</p>
+            <p class="variable2"><a href="https://maps.app.goo.gl/nczjsCXiz4TimKqR7" target="_blank">Buenos Aires, Argentina</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
