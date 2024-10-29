@@ -12,11 +12,10 @@
 body {
 	font-family: Noto Sans;
 	background:-webkit-linear-gradient(top, #570091, #ac068e);
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 0% 5%;
 	display: flex;
 	flex-direction: column;
-}
+}	
 
 h1 {
 	color: azure;
@@ -35,7 +34,7 @@ h3 {
 	color: azure;
 	font-family: Antonio;
 	font-weight: 300;
-	font-size: 2.5em;
+	font-size: 3em;
 }
 
 h4 {
@@ -50,8 +49,8 @@ h4 {
 h5 {
 	color: azure;
 	font-family: Antonio;
-	font-weight: 300;
-	font-size: 4em;
+	font-weight: 100;
+	font-size: 3em;
 }
 
 h6 {
@@ -127,11 +126,10 @@ header {
 }
 
 .contenedor {
-	margin-top: 7%;
+	margin: 7% 0% 5% 0%;
 	height: 85vh;
 	background: url(img/astengobelen-cv.jpg);
 	border-radius: 10px;
-	margin-bottom: 5%;
 	padding: 5% 0% 0% 2.5%;
 }
 
@@ -144,6 +142,7 @@ header {
 	margin-top: 80px;
 	display: flex;
 	font-weight: 600;
+	font-size: 1.2em;
 }
 
 .contenedor li {
@@ -151,8 +150,7 @@ header {
 	border-radius: 10px;
 	width: 15%;	
 	padding: 1% 1%;
-	margin-right: 10px;
-	margin-bottom: 1%;
+	margin: 0% 10px 1% 0%;
 }
 
 .contenedor li:hover {
@@ -162,13 +160,17 @@ header {
 }
 
 .formacion {
-	padding-top: 9%;
+	padding-top: 8%;
+}
+
+.formacion article  {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
+	padding-top: 30px;
+	gap: 35px;
 }
 
 .estudios {
-	margin-top: 30px;
 	font-weight: 100;
 	width: 40vw;
 }
@@ -195,12 +197,10 @@ header {
  }
 
 .materiascompletadas {	
-	margin-top: 80px;
-	margin-left: 10px;
 	background-color: rgba(0, 24, 23, 0.263);
 	border-radius: 10px;
 	padding: 15px 30px;
-	width: 50%;
+	width: 42vw;
 }
 
 .listamaterias {
@@ -208,7 +208,7 @@ header {
 	column-count: 2;
 	list-style-position: inside;
 	line-height: 50px;
-	font-size: 1.1em;
+	font-size: 1.15em;
 }
 
 .materiascompletadas li:hover {
@@ -217,6 +217,7 @@ header {
 	transition: 0.3s;
 	border-radius: 10px;
 	padding-left: 15px;
+	font-weight: 500;
 }
 
 .proyectos {
@@ -240,10 +241,10 @@ header {
 }
 
 .contenido p {
-	font-weight: 100;
-	font-style: italic;
+	font-weight: 600;
 	letter-spacing: 0.7px;
 	padding-bottom: 10px;
+	font-size: 1.1em;
 }
 
 
@@ -260,8 +261,7 @@ header {
 .contenido2 {
 	font-weight: 800;
 	letter-spacing: 0.5px;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding: 30px 0px 10px 0px;
 	font-size: 1.2em;
 }
 
@@ -272,9 +272,8 @@ header {
 
 footer {
 	background: #8106d3;
-	margin-top: 150px;
-	margin-bottom: 50px;
-	padding: 8% 2%;
+	margin: 150px 0px 50px 0px;
+	padding: 6% 2%;
 	border-radius: 10px;
 	display: flex;
 	justify-content: space-around;
@@ -289,10 +288,12 @@ footer:hover {
 
 .variable1 {
 	font-weight: 600;
+	font-size: 1.1em;
 }
 
 .variable2 {
 	font-weight: 200;
+	font-size: 1.1em;
 }
 
 #formulario {
@@ -304,7 +305,7 @@ form {
 	height: fit-content;
 	display: flex;
 	align-items: flex-start;
-	gap: 30px;
+	gap: 40px;
 	flex-wrap: wrap;
 }
 
@@ -452,6 +453,24 @@ textarea {
     filter: saturate(2);
 }
 
+.subtitulo-galeria {
+	margin-top: 80vh;
+	text-align: center;
+}
+
+.subtitulo-galeria :first-child {
+	font-weight: 600;
+	font-size: 1.7em;
+	padding: 5px 0px 10px 0px;
+	color: #ce88fd;
+}
+
+.subtitulo-galeria :last-child {
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: 300;
+}
+
 #foto-1 {
 	background-image: url("img/proyecto1.png");
 }
@@ -485,18 +504,86 @@ textarea {
 }
 
 #foto-9 {
-	background-image:url("img/proyecto8.png");
+	background-image:url("img/proyectos/Artboard 1.png");
 }
 
 @media only screen and (max-width: 600px) {
 
 	header {
-		width: 80%;
-	}
-	.botonera {
-		font-size: 0.7em;
+		font-size: 1.1em;
 	}
 
+	nav {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna para el icono */
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .iconobotonera {
+        grid-column: 1 / -1; /* Ocupará toda la fila superior */
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonera {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas para la lista */
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+		padding: 0% 0% 10px 0%;
+    }
+
+	/* prueba mas cerca
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .botonera {
+        grid-column: span 2; 
+        flex-wrap: wrap;
+        gap: 20px;
+    }*/
+
+	/*
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.iconobotonera {
+		padding-top: 10px;
+	}
+	.botonera {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 10px;
+        justify-items: center;
+    }
+
+	/*
+	.botonera {
+		font-size: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0% 0% 20px 0%;
+		align-items: center;
+		height: fit-content;
+		width: fit-content;
+		column-count: 2;
+	}
+
+	.botonera li {
+		padding-top: 10px;
+	}
+*/
 	.contenedor p {
 		width: 60%;
 	}
@@ -510,16 +597,22 @@ textarea {
 	}
 
 	.contenedor {
-		margin-top: 15%;
+		margin: 15% 0% 10% 0%;
 		height: 85vh;
 		background: url(img/astengobelen-cv\ -fondo-mobile.JPG);
 		border-radius: 10px;
-		margin-bottom: 10%;
 		padding: 5% 0% 0% 2.5%;
 	}
 
+	.contenedor ul {
+		justify-content: center;
+	}
+
 	.contenedor li {
-		padding: 3%;
+		text-align: center;
+		height: fit-content;
+		width: fit-content;
+		padding: 2%;
 	}
 
 	li {
@@ -554,6 +647,7 @@ textarea {
 	}
 
 	.datos {
-		padding-bottom: 2.5%;
+		padding-bottom: 5%;
 	}
 }
+
