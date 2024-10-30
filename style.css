@@ -681,11 +681,11 @@ textarea {
 }
 
 
-/*
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 900px) {
 
 	header {
-		font-size: 1.1em;
+        max-width: 100%;
 	}
 
 	nav {
@@ -851,14 +851,9 @@ textarea {
 		margin-top: 70vh;
 		text-align: center;
 	}
-}*/
+}
 
 @media only screen and (max-width: 600px) {
-
-	header {
-		font-size: 1.1em;
-		max-width: 100%;
-	}
 
 	nav {
         display: grid;
@@ -1017,8 +1012,12 @@ textarea {
 
 	.proyectos {
 		margin-top: 25%;
-		font-size: 3em;
+		font-size: 2em;
 		padding-bottom: 5%;
+	}
+
+	.contenido img {
+		max-width: 450px;
 	}
 
 	.fraccion-galeria {
@@ -1042,7 +1041,7 @@ textarea {
 	}
 
 	.subtitulo-galeria {
-		margin-top: 70vh;
+		margin-top: 60vh;
 		text-align: center;
 	}
 
