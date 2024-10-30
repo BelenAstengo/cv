@@ -681,7 +681,7 @@ textarea {
 }
 
 
-
+/*
 @media only screen and (max-width: 800px) {
 
 	header {
@@ -851,7 +851,7 @@ textarea {
 		margin-top: 70vh;
 		text-align: center;
 	}
-}
+}*/
 
 @media only screen and (max-width: 600px) {
 
@@ -899,12 +899,12 @@ textarea {
 	}
 
 	.contenedor {
-		margin: 30% 0% 10% 0%;
+		margin: 35% 0% 10% 0%;
 		height: 95vh;
 		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
 		background-size: 250%;
-		background-position: -250px;
+		background-position: -230px;
 		background-repeat: no-repeat;
 		border-radius: 10px;
 	}
@@ -1044,5 +1044,18 @@ textarea {
 	.subtitulo-galeria {
 		margin-top: 70vh;
 		text-align: center;
+	}
+
+	form div {
+		width: 540px;
+	}
+
+	input, label, textarea {
+		width: 480px;
+	}
+
+	.intereses {
+		padding-top: 10px;
+		gap: 5px;
 	}
 }
