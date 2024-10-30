@@ -724,7 +724,7 @@ textarea {
 
 	.contenedor {
 		margin: 30% 0% 10% 0%;
-		height: 90vh;
+		height: 100vh;
 		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
 		background-size: 200%;
@@ -741,8 +741,6 @@ textarea {
 
 	.contenedor ul {
 		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
 		font-weight: 600;
 	}
 
@@ -774,10 +772,6 @@ textarea {
 	.logo {
 		width: 50px;
 		height: 50px;
-	}
-
-	.pasatiempos img {
-		max-width: 540px;
 	}
 
 	h6 {
@@ -863,6 +857,7 @@ textarea {
 
 	header {
 		font-size: 1.1em;
+		max-width: 100%;
 	}
 
 	nav {
@@ -892,7 +887,11 @@ textarea {
 	}
 
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
+	}
+
+	h2 {
+		padding-top: 15px;
 	}
 
 	p {
@@ -901,7 +900,7 @@ textarea {
 
 	.contenedor {
 		margin: 30% 0% 10% 0%;
-		height: 90vh;
+		height: 140vh;
 		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
 		background-size: 220%;
@@ -910,7 +909,7 @@ textarea {
 	}
 
 	.contenedor p {
-		font-size: 1.1em;
+		font-size: 1em;
 		background-color: #000000b0;
 		padding: 7px;
 		border-radius: 10px;
@@ -918,8 +917,6 @@ textarea {
 
 	.contenedor ul {
 		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
 		font-weight: 600;
 	}
 
@@ -945,7 +942,11 @@ textarea {
 	}
 
 	.materiascompletadas {
-		width: auto;
+		width: 100%;
+	}
+
+	.materiascompletadas ol {
+		column-count: 1;
 	}
 
 	.logo {
@@ -954,7 +955,7 @@ textarea {
 	}
 
 	.pasatiempos img {
-		max-width: 540px;
+		max-width: 100%;
 	}
 
 	h6 {
@@ -991,6 +992,7 @@ textarea {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+		max-width: 100%;
 	}
 	
 	.contacto h6 {
