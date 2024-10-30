@@ -681,7 +681,7 @@ textarea {
 }
 
 
-
+/*
 @media only screen and (max-width: 900px) {
 
 	header {
@@ -851,7 +851,7 @@ textarea {
 		margin-top: 70vh;
 		text-align: center;
 	}
-}
+}*/
 
 @media only screen and (max-width: 600px) {
 
@@ -1009,7 +1009,6 @@ textarea {
 		font-size: 1em;
 	}
 
-
 	.proyectos {
 		margin-top: 25%;
 		font-size: 2em;
@@ -1017,7 +1016,7 @@ textarea {
 	}
 
 	.contenido img {
-		max-width: 450px;
+		max-width: 80vw;
 	}
 
 	.fraccion-galeria {
@@ -1050,7 +1049,7 @@ textarea {
 	}
 
 	input, label, textarea {
-		width: 480px;
+		width: 78vw;
 	}
 
 	.intereses {
