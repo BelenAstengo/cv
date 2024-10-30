@@ -270,6 +270,46 @@ header {
 	transition: 1s;
 }
 
+@keyframes fondoDegradadoLoop {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.favoritas {
+    background: linear-gradient(45deg, #0ee9c19f, #e056fc);
+    background-size: 200% 200%;
+    animation: fondoDegradadoLoop 8s infinite;
+    margin-top: 80px;
+    padding: 2%;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.contenido3 {
+	padding: 10px 0px 10px 0px;
+	font-size: 1.6em;
+	font-weight: 900;	
+}
+
+#subtitulo-canciones {
+	font-style: italic;
+}
+
+.canciones-fav {
+	padding: 40px 0px 0px 0px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+audio {
+	padding-top: 10px;
+}
+
 footer {
 	background: #8106d3;
 	margin: 150px 0px 50px 0px;
@@ -296,7 +336,7 @@ footer:hover {
 	font-size: 1.1em;
 }
 
-#formulario {
+.formulario {
 	margin-top: 7%;
 }
 
@@ -467,47 +507,46 @@ textarea {
 
 .subtitulo-galeria :last-child {
 	font-size: 1.2em;
-	font-style: italic;
 	font-weight: 300;
 }
 
 #foto-1 {
-	background-image: url("img/proyecto1.png");
+	background-image: url("img/proyectos/proyecto1.png");
 }
 
 #foto-2 {
-	background-image: url("img/proyecto2.png")
+	background-image: url("img/proyectos/proyecto2.png")
 }
 
 #foto-3 {
-	background-image:url("img/proyecto3.png");
+	background-image:url("img/proyectos/proyecto3.png");
 }
 
 #foto-4 {
-	background-image: url("img/proyecto4.png");
+	background-image: url("img/proyectos/proyecto4.png");
 }
 
 #foto-5 {
-	background-image: url("img/proyecto5.png")
+	background-image: url("img/proyectos/proyecto5.png")
 }
 
 #foto-6 {
-	background-image:url("img/proyecto6.png");
+	background-image:url("img/proyectos/proyecto6.png");
 }
 
 #foto-7 {
-	background-image: url("img/proyecto7.png");
+	background-image: url("img/proyectos/proyecto7.png");
 }
 
 #foto-8 {
-	background-image: url("img/proyecto8.png")
+	background-image: url("img/proyectos/proyecto8.png")
 }
 
 #foto-9 {
-	background-image:url("img/proyectos/Artboard 1.png");
+	background-image:url("img/proyectos/proyecto9.png");
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
 
 	header {
 		font-size: 1.1em;
@@ -515,75 +554,26 @@ textarea {
 
 	nav {
         display: grid;
-        grid-template-columns: 1fr; /* Una columna para el icono */
+        grid-template-columns: 1fr;
         justify-items: center;
         gap: 10px;
     }
 
     .iconobotonera {
-        grid-column: 1 / -1; /* Ocupará toda la fila superior */
+        grid-column: 1 / -1; 
         display: flex;
         justify-content: center;
     }
 
     .botonera {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas para la lista */
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         justify-items: center;
         width: 100%;
 		padding: 0% 0% 10px 0%;
     }
 
-	/* prueba mas cerca
-    nav {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 10px;
-        justify-items: center;
-    }
-
-    .botonera {
-        grid-column: span 2; 
-        flex-wrap: wrap;
-        gap: 20px;
-    }*/
-
-	/*
-	nav {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-
-	.iconobotonera {
-		padding-top: 10px;
-	}
-	.botonera {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        gap: 10px;
-        justify-items: center;
-    }
-
-	/*
-	.botonera {
-		font-size: 1em;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 0% 0% 20px 0%;
-		align-items: center;
-		height: fit-content;
-		width: fit-content;
-		column-count: 2;
-	}
-
-	.botonera li {
-		padding-top: 10px;
-	}
-*/
 	.contenedor p {
 		width: 60%;
 	}
@@ -593,19 +583,27 @@ textarea {
 	}
 
 	p {
-		font-size: 0.9em;
+		font-size: 1.2em;
 	}
 
 	.contenedor {
 		margin: 15% 0% 10% 0%;
-		height: 85vh;
-		background: url(img/astengobelen-cv\ -fondo-mobile.JPG);
+		height: 70vh;
 		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
+		background-size: 120%;
+		background-repeat: no-repeat;
+	}
+
+	.contenedor p {
+		font-size: 1.2em;
+		width: 50%;
 	}
 
 	.contenedor ul {
-		justify-content: center;
+		margin-top: 20px;
+
+		font-weight: 600;
 	}
 
 	.contenedor li {
@@ -624,11 +622,21 @@ textarea {
 	}
 
 	.estudios {
-		width: auto;
+		width: 100%;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
 	}
 
 	.materiascompletadas {
-		width: auto;
+		width: 100%;
+		font-size: 1.15em;
+	}
+
+	.logo {
+		width: 50px;
+		height: 50px;
 	}
 
 	.pasatiempos img {
@@ -636,18 +644,394 @@ textarea {
 	}
 
 	h6 {
-		padding-bottom: 40px;
+		padding-bottom: 30px;
+		font-size: 2.3em;
 	}
 
-	footer {
-		font-size: 1em;
-		flex-direction: column;
-		align-items: center;
+	.hobbies {
+		margin-top: 5%;
+	}
+
+	.pasatiempos p {
+		font-size: 1.2em;
+	}
+
+	.contenido2 {
+		font-size: 1.4em;
+	}
+
+	.favoritas {
 		text-align: center;
 	}
 
-	.datos {
-		padding-bottom: 5%;
+	.favoritas ul {
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.favoritas li {
+		padding-bottom: 20px;
+	}
+
+	.formulario {
+		margin-top: 180px;
+		padding-bottom: 0px;
 	}
 }
 
+
+
+@media only screen and (max-width: 800px) {
+
+	header {
+		font-size: 1.1em;
+	}
+
+	nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .iconobotonera {
+        grid-column: 1 / -1; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonera {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+		padding: 0% 0% 10px 0%;
+    }
+
+	.contenedor p {
+		width: 60%;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
+
+	.contenedor {
+		margin: 30% 0% 10% 0%;
+		height: 90vh;
+		border-radius: 10px;
+		padding: 5% 0% 0% 2.5%;
+		background-size: 200%;
+		background-position: -200px;
+		background-repeat: no-repeat;
+	}
+
+	.contenedor p {
+		font-size: 1.1em;
+		background-color: #000000b0;
+		padding: 7px;
+		border-radius: 10px;
+	}
+
+	.contenedor ul {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		font-weight: 600;
+	}
+
+	.contenedor li {
+		text-align: center;
+		height: fit-content;
+		width: fit-content;
+		padding: 2%;
+	}
+
+	li {
+		font-size: 0.9em;
+	}
+
+	.formacion {
+		flex-direction: column;
+	}
+
+	.estudios {
+		width: 100%;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.materiascompletadas {
+		width: auto;
+	}
+
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.pasatiempos img {
+		max-width: 540px;
+	}
+
+	h6 {
+		padding-bottom: 30px;
+		font-size: 2.3em;
+	}
+
+	.hobbies {
+		margin-top: 5%;
+	}
+
+	.pasatiempos p {
+		font-size: 1.2em;
+	}
+
+	.contenido2 {
+		font-size: 1.4em;
+	}
+
+	.favoritas {
+		text-align: center;
+	}
+
+	.favoritas ul {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.favoritas li {
+		padding-bottom: 20px;
+	}
+
+	.contacto {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	
+	.contacto h6 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.datos {
+		width: 45%;
+		margin-bottom: 10px;
+	}
+
+	.proyectos {
+		margin-top: 20%;
+		font-size: 3em;
+		padding-bottom: 50px;
+	}
+
+	.fraccion-galeria {
+		display: flex;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		width: 100%;
+		min-width: 100%;
+		height: 100vh;
+		justify-content: space-between;
+	}
+
+	.close {
+		position: absolute;
+		top: 5%;
+		right: 2%;
+		width: 40px;
+		height: 40px;
+	}
+
+	.subtitulo-galeria {
+		margin-top: 70vh;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	header {
+		font-size: 1.1em;
+	}
+
+	nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    .iconobotonera {
+        grid-column: 1 / -1; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonera {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        justify-items: center;
+        width: 100%;
+		padding: 0% 0% 10px 0%;
+    }
+
+	.contenedor p {
+		width: 60%;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
+
+	.contenedor {
+		margin: 30% 0% 10% 0%;
+		height: 90vh;
+		border-radius: 10px;
+		padding: 5% 0% 0% 2.5%;
+		background-size: 220%;
+		background-position: -200px;
+		background-repeat: no-repeat;
+	}
+
+	.contenedor p {
+		font-size: 1.1em;
+		background-color: #000000b0;
+		padding: 7px;
+		border-radius: 10px;
+	}
+
+	.contenedor ul {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		font-weight: 600;
+	}
+
+	.contenedor li {
+		text-align: center;
+		height: fit-content;
+		width: fit-content;
+		padding: 2%;
+	}
+
+	li {
+		font-size: 0.9em;
+	}
+
+	.formacion {
+		flex-direction: column;
+	}
+
+	.estudios {
+		width: 600px;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.materiascompletadas {
+		width: auto;
+	}
+
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.pasatiempos img {
+		max-width: 540px;
+	}
+
+	h6 {
+		padding-bottom: 30px;
+		font-size: 2.3em;
+	}
+
+	.hobbies {
+		margin-top: 5%;
+	}
+
+	.pasatiempos p {
+		font-size: 1.2em;
+	}
+
+	.contenido2 {
+		font-size: 1.4em;
+	}
+
+	.favoritas {
+		text-align: center;
+	}
+
+	.favoritas ul {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.favoritas li {
+		padding-bottom: 20px;
+	}
+
+	.contacto {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	
+	.contacto h6 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.datos {
+		width: 45%;
+		margin-bottom: 10px;
+	}
+
+	.proyectos {
+		margin-top: 25%;
+		font-size: 3em;
+		padding-bottom: 5%;
+	}
+
+	.fraccion-galeria {
+		display: flex;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		width: 100%;
+		min-width: 100%;
+		height: 100vh;
+		justify-content: space-between;
+	}
+
+	.close {
+		position: absolute;
+		top: 5%;
+		right: 2%;
+		width: 40px;
+		height: 40px;
+	}
+
+	.subtitulo-galeria {
+		margin-top: 70vh;
+		text-align: center;
+	}
+}
