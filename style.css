@@ -1013,6 +1013,11 @@ textarea {
 		padding-bottom: 5%;
 	}
 
+	.contenido img, .miniaturas {
+		max-width: 450px;
+		height: auto;
+	}
+
 	.fraccion-galeria {
 		display: flex;
 		align-items: center;
