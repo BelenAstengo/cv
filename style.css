@@ -550,6 +550,7 @@ textarea {
 
 	header {
 		font-size: 1.1em;
+		z-index: 1;
 	}
 
 	nav {
@@ -587,7 +588,7 @@ textarea {
 	}
 
 	.contenedor {
-		margin: 15% 0% 10% 0%;
+		margin: 180px 0% 10% 0%;
 		height: 70vh;
 		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
@@ -602,7 +603,6 @@ textarea {
 
 	.contenedor ul {
 		margin-top: 20px;
-
 		font-weight: 600;
 	}
 
@@ -610,7 +610,7 @@ textarea {
 		text-align: center;
 		height: fit-content;
 		width: fit-content;
-		padding: 2%;
+		padding: 15px;
 	}
 
 	li {
@@ -640,7 +640,7 @@ textarea {
 	}
 
 	.pasatiempos img {
-		max-width: 540px;
+		max-width: 100%;
 	}
 
 	h6 {
@@ -674,60 +674,27 @@ textarea {
 		padding-bottom: 20px;
 	}
 
+	.proyectos {
+		padding: 180px 0% 2.5% 0%;
+	}
+
 	.formulario {
 		margin-top: 180px;
 		padding-bottom: 0px;
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
 
 	header {
         max-width: 100%;
 	}
 
-	nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 10px;
-    }
-
-    .iconobotonera {
-        grid-column: 1 / -1; 
-        display: flex;
-        justify-content: center;
-    }
-
-    .botonera {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        justify-items: center;
-        width: 100%;
-		padding: 0% 0% 10px 0%;
-    }
-
-	.contenedor p {
-		width: 60%;
-	}
-
-	h1 {
-		font-size: 5em;
-	}
-
-	p {
-		font-size: 1.2em;
-	}
-
 	.contenedor {
-		margin: 30% 0% 10% 0%;
 		height: 100vh;
-		border-radius: 10px;
 		padding: 5% 0% 0% 2.5%;
-		background-size: 200%;
+		background-size: 180%;
 		background-position: -200px;
-		background-repeat: no-repeat;
 	}
 
 	.contenedor p {
@@ -737,24 +704,8 @@ textarea {
 		border-radius: 10px;
 	}
 
-	.contenedor ul {
-		margin-top: 20px;
-		font-weight: 600;
-	}
-
 	.contenedor li {
-		text-align: center;
-		height: fit-content;
-		width: fit-content;
 		padding: 2%;
-	}
-
-	li {
-		font-size: 0.9em;
-	}
-
-	.formacion {
-		flex-direction: column;
 	}
 
 	.estudios {
@@ -767,39 +718,8 @@ textarea {
 		width: auto;
 	}
 
-	.logo {
-		width: 50px;
-		height: 50px;
-	}
-
-	h6 {
-		padding-bottom: 30px;
-		font-size: 2.3em;
-	}
-
-	.hobbies {
-		margin-top: 5%;
-	}
-
-	.pasatiempos p {
-		font-size: 1.2em;
-	}
-
-	.contenido2 {
-		font-size: 1.4em;
-	}
-
-	.favoritas {
-		text-align: center;
-	}
-
-	.favoritas ul {
-		justify-content: center;
-		align-items: center;
-	}
-
-	.favoritas li {
-		padding-bottom: 20px;
+	.pasatiempos img {
+		max-width: 540px;
 	}
 
 	.contacto {
@@ -820,9 +740,18 @@ textarea {
 	}
 
 	.proyectos {
-		margin-top: 20%;
+    	padding-top: 170px;
 		font-size: 3em;
 		padding-bottom: 50px;
+	}
+
+	.contenido p {
+		width: fit-content;
+	}
+	
+	.contenido img, .miniaturas {
+        max-width: 90vw;		
+		height: auto;
 	}
 
 	.fraccion-galeria {
@@ -849,16 +778,22 @@ textarea {
 		margin-top: 70vh;
 		text-align: center;
 	}
+
+	.checkbox {
+		gap: 10px;
+		width: fit-content;
+	}
+
+	.botones-form {
+		width: fit-content;
+	}
+
+	.intereses{
+		max-width: 80vw;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-
-	nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 10px;
-    }
 
     .iconobotonera {
         grid-column: 1 / -1; 
@@ -884,7 +819,7 @@ textarea {
 	}
 
 	h2 {
-		padding-top: 15px;
+		padding: 7px 0px 5px 0px;
 	}
 
 	p {
@@ -892,44 +827,16 @@ textarea {
 	}
 
 	.contenedor {
-		margin: 35% 0% 10% 0%;
-		height: 95vh;
-		border-radius: 10px;
-		padding: 5% 0% 0% 2.5%;
-		background-size: 250%;
-		background-position: -230px;
-		background-repeat: no-repeat;
-		border-radius: 10px;
-	}
-
-	.contenedor p {
-		font-size: 1em;
-		background-color: #000000b0;
-		padding: 7px;
-		border-radius: 10px;
+		margin: 160px 0% 10% 0%;
+		height: 90vh;
+		background-size: cover;
+		background-position: -200px;
 	}
 
 	.contenedor ul {
-		margin-top: 20px;
-		font-weight: 600;
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
-	}
-
-	.contenedor li {
-		text-align: center;
-		height: fit-content;
-		width: fit-content;
-		padding: 2%;
-	}
-
-	li {
-		font-size: 0.9em;
-	}
-
-	.formacion {
-		flex-direction: column;
 	}
 
 	.estudios {
@@ -938,69 +845,16 @@ textarea {
 		gap: 5px;
 	}
 
-	.materiascompletadas {
-		width: 100%;
-	}
-
 	.materiascompletadas ol {
 		column-count: 1;
-	}
-
-	.logo {
-		width: 50px;
-		height: 50px;
 	}
 
 	.pasatiempos img {
 		max-width: 100%;
 	}
 
-	h6 {
-		padding-bottom: 30px;
-		font-size: 2.3em;
-	}
-
-	.hobbies {
-		margin-top: 5%;
-	}
-
-	.pasatiempos p {
-		font-size: 1.2em;
-	}
-
-	.contenido2 {
-		font-size: 1.4em;
-	}
-
-	.favoritas {
-		text-align: center;
-	}
-
-	.favoritas ul {
-		justify-content: center;
-		align-items: center;
-	}
-
-	.favoritas li {
-		padding-bottom: 20px;
-	}
-
 	.contacto {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
 		max-width: 100%;
-	}
-	
-	.contacto h6 {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	
-	.datos {
-		width: 45%;
-		margin-bottom: 10px;
 	}
 
 	.datos p {
@@ -1008,14 +862,9 @@ textarea {
 	}
 
 	.proyectos {
-		margin-top: 35%;
+    	padding-top: 160px;
 		font-size: 1.8em;
 		padding-bottom: 5%;
-	}
-
-	.contenido img, .miniaturas {
-		max-width: 450px;
-		height: auto;
 	}
 
 	.fraccion-galeria {
@@ -1028,14 +877,6 @@ textarea {
 		min-width: 100%;
 		height: 100vh;
 		justify-content: space-between;
-	}
-
-	.close {
-		position: absolute;
-		top: 5%;
-		right: 2%;
-		width: 40px;
-		height: 40px;
 	}
 
 	.subtitulo-galeria {
