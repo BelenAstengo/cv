@@ -101,6 +101,7 @@ header {
 	width: 90%;
 	border-radius: 10px;	
 	margin-top: 1%;
+	z-index: 1;
 }
 
 .iconobotonera {
@@ -336,17 +337,31 @@ footer:hover {
 	font-size: 1.1em;
 }
 
-.formulario {
-	margin-top: 7%;
-}
+.banner {
+	width: 450px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(45deg, #07ebc1d5, #b406d6);
+    background-size: 200% 200%;
+    animation: fondoDegradadoLoop 4s infinite;
+	border-radius: 10px;
+	max-width: 100%;
+  }
+  
+  .banner p {
+	font-size: 1.5em;
+  }
 
 form {
-	margin-top: 30px;
 	height: fit-content;
 	display: flex;
 	align-items: flex-start;
 	gap: 40px;
 	flex-wrap: wrap;
+	margin-top: 180px;
 }
 
 label {
@@ -550,7 +565,6 @@ textarea {
 
 	header {
 		font-size: 1.1em;
-		z-index: 1;
 	}
 
 	nav {
@@ -678,7 +692,7 @@ textarea {
 		padding: 180px 0% 2.5% 0%;
 	}
 
-	.formulario {
+	form {
 		margin-top: 180px;
 		padding-bottom: 0px;
 	}
@@ -695,6 +709,7 @@ textarea {
 		padding: 5% 0% 0% 2.5%;
 		background-size: 180%;
 		background-position: -200px;
+		
 	}
 
 	.contenedor p {
